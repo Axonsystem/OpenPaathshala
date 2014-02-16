@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard</class>
+ <widget class="QMainWindow" name="dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1341</width>
+    <height>926</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+    <kerning>false</kerning>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>0</y>
+      <width>1371</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#frame{
+background-color:#BB0000;
+	}
+QToolButton{
+background-color:transparent;
+border:none;
+color:white;
+}
+QToolButton:checked,QToolButton:pressed{
+background-color: rgb(132, 110, 255);
+border:1px solid rgb(60,127,177);
+}
+QToolButton:hover
+{
+background-color: rgb(0, 77, 116);
+}
+QToolButton:checked:hover{
+background-color: rgb(132, 110, 255);
+
+}
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="student">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Student</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/student.png</normaloff>:/new/prefix1/icon/student.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Employees">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Employee</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/employee.png</normaloff>:/new/prefix1/icon/employee.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Courses">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Courses</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/courses.png</normaloff>:/new/prefix1/icon/courses.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Home">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolbutton #Home{
+	border-color: transparent;
+}</string>
+     </property>
+     <property name="text">
+      <string>Home</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/Home-icon.png</normaloff>:/new/prefix1/icon/Home-icon.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+     <property name="autoRaise">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Examination">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exam</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/exam.png</normaloff>:/new/prefix1/icon/exam.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Attendance">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Attendance</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/attendence1.png</normaloff>:/new/prefix1/icon/attendence1.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="TimeTable">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time Tabe</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/timetable.png</normaloff>:/new/prefix1/icon/timetable.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Account">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Account</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/fiance.png</normaloff>:/new/prefix1/icon/fiance.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Report">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Report</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/report.png</normaloff>:/new/prefix1/icon/report.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Settings">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Settings</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/Setting.png</normaloff>:/new/prefix1/icon/Setting.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Hostel">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Hostel</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/Hostel.png</normaloff>:/new/prefix1/icon/Hostel.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Transport">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Transport</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/Travel_Bus.png</normaloff>:/new/prefix1/icon/Travel_Bus.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Library">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Library</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/Library.png</normaloff>:/new/prefix1/icon/Library.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="SMS">
+     <property name="geometry">
+      <rect>
+       <x>970</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SMS</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/sms.png</normaloff>:/new/prefix1/icon/sms.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="Search">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>10</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seach</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icon.qrc">
+       <normaloff>:/new/prefix1/icon/search.png</normaloff>:/new/prefix1/icon/search.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>39</height>
+      </size>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1341</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSchool_Setup">
+    <property name="title">
+     <string>School Setup</string>
+    </property>
+    <addaction name="actionNew_school_setup"/>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuStudent">
+    <property name="title">
+     <string>Student</string>
+    </property>
+    <addaction name="actionAdd_Student"/>
+    <addaction name="actionSearch_Student_Info"/>
+    <addaction name="actionStudent_Identity_Card"/>
+    <addaction name="actionStudent_Profile"/>
+   </widget>
+   <widget class="QMenu" name="menuTeacher">
+    <property name="title">
+     <string>Teacher</string>
+    </property>
+    <addaction name="actionAdd_Teacher"/>
+    <addaction name="actionTeacher_Info"/>
+   </widget>
+   <widget class="QMenu" name="menuAcademic">
+    <property name="title">
+     <string>Academic</string>
+    </property>
+    <addaction name="actionReports"/>
+    <addaction name="actionCalculate_GPA"/>
+    <addaction name="actionTransfer_Cretificate"/>
+    <addaction name="actionCharacter_Certificate"/>
+    <addaction name="actionMonthly_Test"/>
+   </widget>
+   <widget class="QMenu" name="menuAttendance">
+    <property name="title">
+     <string>Attendance</string>
+    </property>
+    <addaction name="actionAttendance"/>
+   </widget>
+   <widget class="QMenu" name="menuClass_Setup">
+    <property name="title">
+     <string>Class Setup</string>
+    </property>
+    <addaction name="actionAdd_Class"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_Course"/>
+    <addaction name="separator"/>
+    <addaction name="actionDaily_Routine"/>
+    <addaction name="actionHouse_Setup"/>
+   </widget>
+   <widget class="QMenu" name="menuAccounts">
+    <property name="title">
+     <string>Accounts</string>
+    </property>
+    <addaction name="actionFee_Slip"/>
+    <addaction name="actionPay_Slip"/>
+    <addaction name="actionDaily_Collection"/>
+    <addaction name="actionExpenditure"/>
+    <addaction name="actionLedger_Sheet"/>
+    <addaction name="actionBalance_Sheet"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <addaction name="actionView_Log_File"/>
+    <addaction name="actionSecurity"/>
+    <addaction name="actionUser"/>
+   </widget>
+   <widget class="QMenu" name="menuTransapotation">
+    <property name="title">
+     <string>Transapotation</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHR_Management">
+    <property name="title">
+     <string>HR Management</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout_Us">
+    <property name="title">
+     <string>About Us</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuSchool_Setup"/>
+   <addaction name="menuStudent"/>
+   <addaction name="menuTeacher"/>
+   <addaction name="menuAcademic"/>
+   <addaction name="menuAttendance"/>
+   <addaction name="menuClass_Setup"/>
+   <addaction name="menuAccounts"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuTransapotation"/>
+   <addaction name="menuHR_Management"/>
+   <addaction name="menuAbout_Us"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionNew_school_setup">
+   <property name="text">
+    <string>New school setup</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionAdd_Student">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/add.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/add.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Add Student</string>
+   </property>
+   <property name="iconText">
+    <string>Add New Student
+</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSearch_Student_Info">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/student_details_logo.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/student_details_logo.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Search Student Info</string>
+   </property>
+  </action>
+  <action name="actionStudent_Identity_Card">
+   <property name="text">
+    <string>Student Identity Card</string>
+   </property>
+  </action>
+  <action name="actionStudent_Profile">
+   <property name="text">
+    <string>Student Profile</string>
+   </property>
+  </action>
+  <action name="actionAdd_Teacher">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/Administrator 2.png</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/Administrator 2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Teacher</string>
+   </property>
+  </action>
+  <action name="actionTeacher_Info">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/student_details_logo.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/student_details_logo.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Teacher Info</string>
+   </property>
+  </action>
+  <action name="actionReports">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_exam.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_exam.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Reports </string>
+   </property>
+  </action>
+  <action name="actionCalculate_GPA">
+   <property name="text">
+    <string>Calculate GPA</string>
+   </property>
+  </action>
+  <action name="actionTransfer_Cretificate">
+   <property name="text">
+    <string>Transfer Cretificate</string>
+   </property>
+  </action>
+  <action name="actionCharacter_Certificate">
+   <property name="text">
+    <string>Character Certificates</string>
+   </property>
+  </action>
+  <action name="actionMonthly_Test">
+   <property name="text">
+    <string>Monthly Test</string>
+   </property>
+  </action>
+  <action name="actionAttendance">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/attendence1.png</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/attendence1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Attendance</string>
+   </property>
+   <property name="iconText">
+    <string>Attendance</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="actionAdd_Class">
+   <property name="text">
+    <string>Add Class</string>
+   </property>
+  </action>
+  <action name="actionAdd_Course">
+   <property name="text">
+    <string>Add Course</string>
+   </property>
+  </action>
+  <action name="actionDaily_Routine">
+   <property name="text">
+    <string>Daily Routine </string>
+   </property>
+  </action>
+  <action name="actionHouse_Setup">
+   <property name="text">
+    <string>House Setup</string>
+   </property>
+  </action>
+  <action name="actionFee_Slip">
+   <property name="text">
+    <string>Fee Slip</string>
+   </property>
+  </action>
+  <action name="actionPay_Slip">
+   <property name="text">
+    <string>Pay Slip</string>
+   </property>
+  </action>
+  <action name="actionDaily_Collection">
+   <property name="text">
+    <string>Daily Collection</string>
+   </property>
+  </action>
+  <action name="actionExpenditure">
+   <property name="text">
+    <string>Expenditure</string>
+   </property>
+  </action>
+  <action name="actionLedger_Sheet">
+   <property name="text">
+    <string>Ledger Sheet</string>
+   </property>
+  </action>
+  <action name="actionBalance_Sheet">
+   <property name="text">
+    <string>Balance Sheet</string>
+   </property>
+  </action>
+  <action name="actionView_Log_File">
+   <property name="text">
+    <string>View Log File</string>
+   </property>
+  </action>
+  <action name="actionSecurity">
+   <property name="text">
+    <string>Security</string>
+   </property>
+  </action>
+  <action name="actionUser">
+   <property name="text">
+    <string>User</string>
+   </property>
+  </action>
+  <action name="actionTransaportation">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/transport_small.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/transport_small.ico</iconset>
+   </property>
+   <property name="text">
+    <string>transaportation</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/Preview Docment.png</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/Preview Docment.png</iconset>
+   </property>
+   <property name="text">
+    <string>search</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/print.gif</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/print.gif</iconset>
+   </property>
+   <property name="text">
+    <string>print</string>
+   </property>
+  </action>
+  <action name="actionAccount">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_finance.ico</normaloff>
+     <normalon>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_finance.ico</normalon>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_finance.ico</iconset>
+   </property>
+   <property name="text">
+    <string>account</string>
+   </property>
+   <property name="iconText">
+    <string>kiran</string>
+   </property>
+  </action>
+  <action name="actionTimetable">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_timetable.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_timetable.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Time table</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_settings.ico</normaloff>:/new/prefix1/C:/Users/kiran/Desktop/icon/show_settings.ico</iconset>
+   </property>
+   <property name="text">
+    <string>setting</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

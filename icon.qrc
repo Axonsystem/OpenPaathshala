@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icon/attendence1.png</file>
+        <file>icon/button_admission.png</file>
+        <file>icon/courses.png</file>
+        <file>icon/employee.jpg</file>
+        <file>icon/employee.png</file>
+        <file>icon/exam.png</file>
+        <file>icon/finance.png</file>
+        <file>icon/Hostel.png</file>
+        <file>icon/Library.png</file>
+        <file>icon/report.png</file>
+        <file>icon/search.png</file>
+        <file>icon/Setting.png</file>
+        <file>icon/sms.png</file>
+        <file>icon/timetable.png</file>
+        <file>icon/Travel_Bus.png</file>
+        <file>icon/student.png</file>
+        <file>icon/fiance.png</file>
+        <file>icon/Home-icon.png</file>
+    </qresource>
+</RCC>

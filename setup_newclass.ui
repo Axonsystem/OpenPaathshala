@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>setup_newclass</class>
+ <widget class="QMainWindow" name="setup_newclass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblheader">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>741</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 85, 127);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>CLASS SETUP</string>
+    </property>
+    <property name="margin">
+     <number>299</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbldescription">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>66</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Description</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblshortname">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>99</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Short Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblinchargename">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>128</y>
+      <width>103</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Incharge Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblclasshedule">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>130</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Class Shedule</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblmaxstd">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>165</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Max Student</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblminstd">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>165</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Min Student</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblstarttime">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>201</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Start Time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblendtime">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>201</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>End Time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblremarks">
+    <property name="geometry">
+     <rect>
+      <x>41</x>
+      <y>230</y>
+      <width>103</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Remarks</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtinchargename">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>126</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtmaxstd">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>160</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtclasshedule">
+    <property name="geometry">
+     <rect>
+      <x>502</x>
+      <y>126</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtminstd">
+    <property name="geometry">
+     <rect>
+      <x>502</x>
+      <y>160</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtdescription">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>60</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtshortname">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>93</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="combostarttime">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>196</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="comboendtime">
+    <property name="geometry">
+     <rect>
+      <x>502</x>
+      <y>196</y>
+      <width>180</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtremark">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>460</width>
+      <height>190</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>460</y>
+      <width>691</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnprev">
+       <property name="text">
+        <string>Previous</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnnext">
+       <property name="text">
+        <string>Next </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnsave">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnquit">
+       <property name="text">
+        <string>Quit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>765</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
